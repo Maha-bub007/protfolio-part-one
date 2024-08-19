@@ -22,3 +22,6 @@
 <link rel="stylesheet" href="{{asset('backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{asset('backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{asset('backend/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
+
+  {{-- //cdn --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/v5-font-face.min.css" integrity="sha512-DcECXqwZmt1qB8pmbplND75YoND3xBL1h4/LGQ+0zoizkoAKI+BniMoEF/JsZ/vcnsr9X5NOGaB63jLmOxgJrA==" crossorigin="anonymous" referrerpolicy="no-referrer" />

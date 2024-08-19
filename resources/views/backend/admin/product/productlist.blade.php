@@ -26,8 +26,8 @@
                             <td> {{$data->price}}</td>
                             
                             <td>
-                                <a href="" class="btn btn-success">Edit</a>
-                                <a href="{{url('/admin/product/delete/'.$data->id)}}" onclick="return confirm('Are you sure?')" class="btn btn-danger">Delete</a>
+                                <a href="{{url('/admin/product/edit/'.$data->id)}}" class="btn btn-success"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="{{url('/admin/product/delete/'.$data->id)}}" onclick="return confirm('Are you sure?')" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</a>
                             </td>
                         </tr>
                             

@@ -43,3 +43,5 @@ Route::get('/admin/product/creat',[productController::class,'creatProduct']);
 Route::post('/admin/product/store',[productController::class,'storeProduct']);
 Route::get('/admin/product/list',[productController::class,'listProduct']);
 Route::get('/admin/product/delete/{id}',[productController::class,'deleteProduct']);
+Route::get('/admin/product/edit/{id}',[productController::class,'editProduct']);
+Route::post('/admin/product/update/{id}',[productController::class,'updateProduct']);
