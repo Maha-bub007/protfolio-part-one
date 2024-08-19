@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\backend\adminController;
+use App\Http\Controllers\backend\productController;
 use App\Http\Controllers\homecontroller;
 use Illuminate\Support\Facades\Route;
 
@@ -36,3 +37,9 @@ Route::get('/admin/login',[adminController::class,'login']);
 Route::post('/admin/login',[adminController::class,'loginCheck']);
 Route::get('/admin/dashbroad',[adminController::class,'dashbroad']);
 
+
+//product routes.....
+Route::get('/admin/product/creat',[productController::class,'creatProduct']);
+Route::post('/admin/product/store',[productController::class,'storeProduct']);
+Route::get('/admin/product/list',[productController::class,'listProduct']);
+Route::get('/admin/product/delete/{id}',[productController::class,'deleteProduct']);
