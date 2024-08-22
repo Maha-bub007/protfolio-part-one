@@ -60,6 +60,79 @@
             </ul>
           </li>
           
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Services
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('/admin/service/creat')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add New Services</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('/admin/service/list')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Services List</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Our Team
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('/admin/team/creat')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add New Member</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('/admin/team/list')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Members List</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Blog
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('/admin/Blog/creat')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add New Blog</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('/admin/Blog/list')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Blog List</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

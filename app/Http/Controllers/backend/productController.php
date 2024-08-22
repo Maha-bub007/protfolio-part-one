@@ -74,22 +74,18 @@ class productController extends Controller
                 $productUpdate = Product::find($id);
                 $productUpdate->name = $request->name;
                 $productUpdate->price = $request->price;
-                if($productUpdate->image && file_exists('backend/image/product/'.$productUpdate->image)){
-                    unlink('backend/image/product/'.$productUpdate->image);
-                }
-                if(isset($request->image)){
-                    $imagename = rand().'product'.'.'.$request->image->extension();
-                    $request->image->move('backend/image/product/',$imagename);
+                if (isset($request->image)) {
+                    if ($productUpdate->image && file_exists('backend/image/product/' . $productUpdate->image)) {
+                        unlink('backend/image/product/' . $productUpdate->image);
+                    }
+
+                    $imagename = rand() . 'product' . '.' . $request->image->extension();
+                    $request->image->move('backend/image/product/', $imagename);
                     $productUpdate->image = $imagename;
-
-
                 }
-
-
             }
             $productUpdate->save();
             return redirect('/admin/product/list');
-
         }
     }
 }
